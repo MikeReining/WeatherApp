@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var vancouver = City(name: "Vancouver", temperature: "5")
+        var munich = City(name: "Munich", temperature: "12")
+        var sanFrancisco = City(name: "San Francisco", temperature: "10")
+        var kualaLumpur = City(name: "Kuala Lumpur", temperature: "32")
+        var chicago = City(name: "Chicago", temperature: "-3")
         return true
     }
 
