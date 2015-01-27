@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Initialize city objects
-        var vancouver = City(name: "Vancouver", temperature: "5")
-        var munich = City(name: "Munich", temperature: "12")
-        var sanFrancisco = City(name: "San Francisco", temperature: "10")
-        var kualaLumpur = City(name: "Kuala Lumpur", temperature: "32")
-        var chicago = City(name: "Chicago", temperature: "-3")
+        let vancouver = City(name: "Vancouver", temperature: "5", icon: "fog")
+        let munich = City(name: "Munich", temperature: "12", icon: "snow")
+        let sanFrancisco = City(name: "San Francisco", temperature: "10", icon: "clear-day")
+        let kualaLumpur = City(name: "Kuala Lumpur", temperature: "32",icon: "clear-night")
+        let chicago = City(name: "Chicago", temperature: "-3", icon: "snow")
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Tab Bar at Index 0
         var nav1 = UINavigationController()
-        nav1.tabBarItem.title = "Vancouver"
-        var tabBarImage = UIImage(named: "fog")
+        nav1.tabBarItem.title = vancouver.name
+        var tabBarImage = UIImage(named: vancouver.icon)
         nav1.tabBarItem.image = tabBarImage
         var firstVC = FirstViewController(nibName: nil, bundle: nil)
         firstVC.view.backgroundColor = UIColor.redColor()
@@ -37,16 +37,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav1.viewControllers = [firstVC]
         
         var nav2 = UINavigationController()
-        nav2.tabBarItem.title = "Munich"
-        tabBarImage = UIImage(named: "snow")
+        nav2.tabBarItem.title = munich.name
+        tabBarImage = UIImage(named: munich.icon)
         nav2.tabBarItem.image = tabBarImage
         var secondVC = SecondViewController(nibName: nil, bundle: nil)
         secondVC.city = munich
         nav2.viewControllers = [secondVC]
         
         var nav3 = UINavigationController()
-        nav3.tabBarItem.title = "San Francisco"
-        tabBarImage = UIImage(named: "clear-day")
+        nav3.tabBarItem.title = sanFrancisco.name
+        tabBarImage = UIImage(named: sanFrancisco.icon)
         nav3.tabBarItem.image = tabBarImage
         var thirdVC = ThirdViewController(nibName: nil, bundle: nil)
         thirdVC.view.backgroundColor = UIColor.greenColor()
@@ -54,11 +54,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav3.viewControllers = [thirdVC]
         
         var nav4 = UINavigationController()
-        nav4.tabBarItem.title = "Kuala Lumpur"
-        tabBarImage = UIImage(named: "clear-night")
+        nav4.tabBarItem.title = kualaLumpur.name
+        tabBarImage = UIImage(named: kualaLumpur.icon)
         nav4.tabBarItem.image = tabBarImage
         var fourthVC = FourthViewController(nibName: nil, bundle: nil)
         fourthVC.city = kualaLumpur
+        nav4.viewControllers = [fourthVC]
         
         var tabs = UITabBarController()
         tabs.viewControllers = [nav1,nav2,nav3,nav4]

@@ -12,10 +12,11 @@ import UIKit
 class City {
     var name: String
     var temperature: String
-    var icon: UIImage?
+    var icon: String
     
-    init(name: String, temperature: String) {
+    init(name: String, temperature: String, icon: String) {
         self.name = name
         self.temperature = temperature
+        self.icon = icon
     }
 }
