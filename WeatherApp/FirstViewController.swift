@@ -17,12 +17,8 @@ class FirstViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW,
-            Int64(3 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            self.showWeatherDetails()
-        }
+        self.title = city.name
+        self.showWeatherDetails()
         
     }
     

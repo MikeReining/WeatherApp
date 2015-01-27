@@ -9,5 +9,8 @@
 import UIKit
 
 class FourthViewController: UIViewController {
+    var city: City!
 
+    
+    
 }

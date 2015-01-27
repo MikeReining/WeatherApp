@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav1.tabBarItem.image = tabBarImage
         var firstVC = FirstViewController(nibName: nil, bundle: nil)
         firstVC.view.backgroundColor = UIColor.redColor()
+        firstVC.city = vancouver
         nav1.viewControllers = [firstVC]
         
         var nav2 = UINavigationController()
@@ -40,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarImage = UIImage(named: "snow")
         nav2.tabBarItem.image = tabBarImage
         var secondVC = SecondViewController(nibName: nil, bundle: nil)
+        secondVC.city = munich
         nav2.viewControllers = [secondVC]
         
         var nav3 = UINavigationController()
@@ -48,21 +50,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav3.tabBarItem.image = tabBarImage
         var thirdVC = ThirdViewController(nibName: nil, bundle: nil)
         thirdVC.view.backgroundColor = UIColor.greenColor()
+        thirdVC.city = sanFrancisco
         nav3.viewControllers = [thirdVC]
         
         var nav4 = UINavigationController()
         nav4.tabBarItem.title = "Kuala Lumpur"
         tabBarImage = UIImage(named: "clear-night")
         nav4.tabBarItem.image = tabBarImage
+        var fourthVC = FourthViewController(nibName: nil, bundle: nil)
+        fourthVC.city = kualaLumpur
         
         var tabs = UITabBarController()
         tabs.viewControllers = [nav1,nav2,nav3,nav4]
         
         self.window!.rootViewController = tabs;
         self.window?.makeKeyAndVisible();
-
-        
-        
         
         return true
     }

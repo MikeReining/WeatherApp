@@ -9,5 +9,8 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    var city: City!
 
+    
+    
 }

@@ -9,10 +9,24 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    var city: City!
 
+    
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.yellowColor()
-
+        navigationController?.title = city.name
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        title = city.name
+        showWeatherDetails()
+        
+    }
+    
+    func showWeatherDetails() {
+        let dvc = DetailedViewController(nibName: nil, bundle: nil)
+        dvc.city = city
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
     
 }
