@@ -21,6 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var sanFrancisco = City(name: "San Francisco", temperature: "10")
         var kualaLumpur = City(name: "Kuala Lumpur", temperature: "32")
         var chicago = City(name: "Chicago", temperature: "-3")
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var nav1 = UINavigationController()
+        var firstVC = FirstViewController(nibName: nil, bundle: nil)
+        firstVC.view.backgroundColor = UIColor.redColor()
+        nav1.viewControllers = [firstVC]
+        
+        var tabs = UITabBarController()
+        tabs.viewControllers = [nav1]
+        
+        self.window!.rootViewController = tabs;
+        self.window?.makeKeyAndVisible();
+
+        
+        
+        
         return true
     }
 

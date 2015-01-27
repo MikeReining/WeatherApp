@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270F2BD11A782A6300814A53 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F2BD01A782A6300814A53 /* FirstViewController.swift */; };
 		2711DEAD1A7820ED0015062C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEAC1A7820ED0015062C /* AppDelegate.swift */; };
 		2711DEAF1A7820ED0015062C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEAE1A7820ED0015062C /* ViewController.swift */; };
 		2711DEB21A7820ED0015062C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2711DEB01A7820ED0015062C /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270F2BD01A782A6300814A53 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		2711DEA71A7820ED0015062C /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2711DEAB1A7820ED0015062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2711DEAC1A7820ED0015062C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2711DEAC1A7820ED0015062C /* AppDelegate.swift */,
+				270F2BD01A782A6300814A53 /* FirstViewController.swift */,
 				2711DEAE1A7820ED0015062C /* ViewController.swift */,
 				2711DECC1A7822520015062C /* City.swift */,
 				2711DEB01A7820ED0015062C /* Main.storyboard */,
@@ -218,6 +221,7 @@
 				2711DEAF1A7820ED0015062C /* ViewController.swift in Sources */,
 				2711DEAD1A7820ED0015062C /* AppDelegate.swift in Sources */,
 				2711DECD1A7822520015062C /* City.swift in Sources */,
+				270F2BD11A782A6300814A53 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				2711DEC81A7820ED0015062C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2711DEC91A7820ED0015062C /* Build configuration list for PBXNativeTarget "WeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				2711DECB1A7820ED0015062C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
