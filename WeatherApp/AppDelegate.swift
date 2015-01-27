@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize city objects
         var vancouver = City(name: "Vancouver", temperature: "5")
         var munich = City(name: "Munich", temperature: "12")
         var sanFrancisco = City(name: "San Francisco", temperature: "10")
@@ -24,13 +24,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        // Setup view controllers programmatically and configure title and icon for TabBar
+        
+        // Tab Bar at Index 0
         var nav1 = UINavigationController()
+        nav1.tabBarItem.title = "Vancouver"
+        var tabBarImage = UIImage(named: "fog")
+        nav1.tabBarItem.image = tabBarImage
         var firstVC = FirstViewController(nibName: nil, bundle: nil)
         firstVC.view.backgroundColor = UIColor.redColor()
         nav1.viewControllers = [firstVC]
         
+        var nav2 = UINavigationController()
+        nav2.tabBarItem.title = "Munich"
+        tabBarImage = UIImage(named: "snow")
+        nav2.tabBarItem.image = tabBarImage
+        var secondVC = SecondViewController(nibName: nil, bundle: nil)
+        nav2.viewControllers = [secondVC]
+        
+        var nav3 = UINavigationController()
+        nav3.tabBarItem.title = "San Francisco"
+        tabBarImage = UIImage(named: "clear-day")
+        nav3.tabBarItem.image = tabBarImage
+        var thirdVC = ThirdViewController(nibName: nil, bundle: nil)
+        thirdVC.view.backgroundColor = UIColor.greenColor()
+        nav3.viewControllers = [thirdVC]
+        
+        var nav4 = UINavigationController()
+        nav4.tabBarItem.title = "Kuala Lumpur"
+        tabBarImage = UIImage(named: "clear-night")
+        nav4.tabBarItem.image = tabBarImage
+        
         var tabs = UITabBarController()
-        tabs.viewControllers = [nav1]
+        tabs.viewControllers = [nav1,nav2,nav3,nav4]
         
         self.window!.rootViewController = tabs;
         self.window?.makeKeyAndVisible();

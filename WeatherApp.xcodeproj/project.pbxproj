@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		270F2BD11A782A6300814A53 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F2BD01A782A6300814A53 /* FirstViewController.swift */; };
+		270F2BD31A782BA700814A53 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F2BD21A782BA700814A53 /* SecondViewController.swift */; };
+		270F2BD51A782BB100814A53 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F2BD41A782BB100814A53 /* ThirdViewController.swift */; };
+		270F2C051A782BE500814A53 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F2C041A782BE500814A53 /* FourthViewController.swift */; };
 		2711DEAD1A7820ED0015062C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEAC1A7820ED0015062C /* AppDelegate.swift */; };
-		2711DEAF1A7820ED0015062C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEAE1A7820ED0015062C /* ViewController.swift */; };
 		2711DEB21A7820ED0015062C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2711DEB01A7820ED0015062C /* Main.storyboard */; };
 		2711DEB41A7820ED0015062C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2711DEB31A7820ED0015062C /* Images.xcassets */; };
 		2711DEB71A7820ED0015062C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2711DEB51A7820ED0015062C /* LaunchScreen.xib */; };
 		2711DEC31A7820ED0015062C /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEC21A7820ED0015062C /* WeatherAppTests.swift */; };
 		2711DECD1A7822520015062C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DECC1A7822520015062C /* City.swift */; };
+		27D7A10E1A78337700D587FE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7A10D1A78337700D587FE /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +32,12 @@
 
 /* Begin PBXFileReference section */
 		270F2BD01A782A6300814A53 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		270F2BD21A782BA700814A53 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		270F2BD41A782BB100814A53 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		270F2C041A782BE500814A53 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2711DEA71A7820ED0015062C /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2711DEAB1A7820ED0015062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2711DEAC1A7820ED0015062C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2711DEAE1A7820ED0015062C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2711DEB11A7820ED0015062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2711DEB31A7820ED0015062C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2711DEB61A7820ED0015062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		2711DEC11A7820ED0015062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2711DEC21A7820ED0015062C /* WeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
 		2711DECC1A7822520015062C /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		27D7A10D1A78337700D587FE /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270F2C061A782BEC00814A53 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				270F2BD01A782A6300814A53 /* FirstViewController.swift */,
+				270F2BD21A782BA700814A53 /* SecondViewController.swift */,
+				270F2BD41A782BB100814A53 /* ThirdViewController.swift */,
+				270F2C041A782BE500814A53 /* FourthViewController.swift */,
+				27D7A10D1A78337700D587FE /* DetailedViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2711DE9E1A7820ED0015062C = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				2711DEAC1A7820ED0015062C /* AppDelegate.swift */,
-				270F2BD01A782A6300814A53 /* FirstViewController.swift */,
-				2711DEAE1A7820ED0015062C /* ViewController.swift */,
+				270F2C061A782BEC00814A53 /* ViewControllers */,
 				2711DECC1A7822520015062C /* City.swift */,
 				2711DEB01A7820ED0015062C /* Main.storyboard */,
 				2711DEB31A7820ED0015062C /* Images.xcassets */,
@@ -218,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2711DEAF1A7820ED0015062C /* ViewController.swift in Sources */,
+				27D7A10E1A78337700D587FE /* DetailedViewController.swift in Sources */,
 				2711DEAD1A7820ED0015062C /* AppDelegate.swift in Sources */,
 				2711DECD1A7822520015062C /* City.swift in Sources */,
+				270F2C051A782BE500814A53 /* FourthViewController.swift in Sources */,
+				270F2BD31A782BA700814A53 /* SecondViewController.swift in Sources */,
+				270F2BD51A782BB100814A53 /* ThirdViewController.swift in Sources */,
 				270F2BD11A782A6300814A53 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
