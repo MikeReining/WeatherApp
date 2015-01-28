@@ -50,7 +50,8 @@ class FirstViewController: UIViewController {
     }
     
     func addCity(sender: UIBarButtonItem!) {
-        println("method called successfully")
+        let addCityVC = AddCityViewController(nibName: nil, bundle: nil)
+        self.navigationController!.pushViewController(addCityVC, animated: true)
     }
 
 

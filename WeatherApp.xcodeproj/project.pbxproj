@@ -18,6 +18,7 @@
 		2711DEC31A7820ED0015062C /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DEC21A7820ED0015062C /* WeatherAppTests.swift */; };
 		2711DECD1A7822520015062C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711DECC1A7822520015062C /* City.swift */; };
 		27D7A10E1A78337700D587FE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7A10D1A78337700D587FE /* DetailedViewController.swift */; };
+		27D7A1141A7870EC00D587FE /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7A1131A7870EC00D587FE /* AddCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2711DEC21A7820ED0015062C /* WeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
 		2711DECC1A7822520015062C /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		27D7A10D1A78337700D587FE /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		27D7A1131A7870EC00D587FE /* AddCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCityViewController.swift; path = ../AddCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				270F2BD41A782BB100814A53 /* ThirdViewController.swift */,
 				270F2C041A782BE500814A53 /* FourthViewController.swift */,
 				27D7A10D1A78337700D587FE /* DetailedViewController.swift */,
+				27D7A1131A7870EC00D587FE /* AddCityViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				270F2BD31A782BA700814A53 /* SecondViewController.swift in Sources */,
 				270F2BD51A782BB100814A53 /* ThirdViewController.swift in Sources */,
 				270F2BD11A782A6300814A53 /* FirstViewController.swift in Sources */,
+				27D7A1141A7870EC00D587FE /* AddCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
